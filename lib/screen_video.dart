@@ -11,7 +11,8 @@ class ScreenVideo extends StatefulWidget {
 
 class _ScreenVideoState extends State<ScreenVideo> {
   final videoPlayerController = VideoPlayerController.network(
-      'https:\/\/video01.kshost.com.br\/gente8322\/gente8322\/playlist.m3u8');
+      'https://video01.kshost.com.br/gente8322/gente8322/playlist.m3u8');
+
   late ChewieController chewieController;
 
   @override
@@ -22,7 +23,8 @@ class _ScreenVideoState extends State<ScreenVideo> {
         videoPlayerController: videoPlayerController,
         aspectRatio: 3 / 2,
         autoInitialize: true,
-        allowFullScreen: true
+        allowFullScreen: true,
+        fullScreenByDefault: true,
         );
   }
 
